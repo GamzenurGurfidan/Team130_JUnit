@@ -1,4 +1,4 @@
-package tests.day06_Assertion;
+package tests.day06_Assertions;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utilities.TestBase;
 
-public class C05_DrpodownMenu extends TestBase {
+public class C05_DropdownMenu extends TestBase {
 
     // ● https://testotomasyonu.com/form adresine gidin.
     //	1.Dogum tarihi gun seçeneğinden index kullanarak 5’i secin

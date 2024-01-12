@@ -1,4 +1,4 @@
-package tests.day06_Assertion;
+package tests.day06_Assertions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
