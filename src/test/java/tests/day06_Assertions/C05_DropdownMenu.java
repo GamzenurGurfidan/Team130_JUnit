@@ -50,10 +50,12 @@ public class C05_DropdownMenu extends TestBase {
 
         System.out.println(ayDdmElemetti.getText());
 
-        Assert.assertEquals(selectAy.getOptions().size(),13);
+        System.out.println(selectAy.getOptions().size());
+
+        Assert.assertEquals(13, selectAy.getOptions().size());
 
 
-        Thread.sleep(1000);
+        // Thread.sleep(1000);
     }
 
 }
