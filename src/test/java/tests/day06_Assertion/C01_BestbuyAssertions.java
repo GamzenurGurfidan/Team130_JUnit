@@ -1,8 +1,7 @@
-package tests.day06_Assertions;
+package tests.day06_Assertion;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import org.checkerframework.checker.units.qual.A;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
