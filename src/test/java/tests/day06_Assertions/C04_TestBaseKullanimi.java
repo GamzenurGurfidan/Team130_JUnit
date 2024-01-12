@@ -2,7 +2,7 @@ package tests.day06_Assertions;
 
 import org.junit.Assert;
 import org.junit.Test;
-import utilities.TestBase;
+import utilitie.TestBase;
 
 public class C04_TestBaseKullanimi extends TestBase {
 

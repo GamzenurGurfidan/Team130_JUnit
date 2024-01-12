@@ -1,4 +1,4 @@
-package utilities;
+package utilitie;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
