@@ -1,11 +1,15 @@
 package tests.day06_Assertions;
 
+import jdk.dynalink.linker.LinkerServices;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import utilitie.ReusableMethods;
 import utilitie.TestBase;
+
+import java.util.List;
 
 public class C05_DropdownMenu extends TestBase {
 
@@ -48,13 +52,24 @@ public class C05_DropdownMenu extends TestBase {
                            selectAy.getFirstSelectedOption().getText() + "\n" +
                            selectYil.getFirstSelectedOption().getText());
 
-        System.out.println(ayDdmElemetti.getText());
-
-        System.out.println(selectAy.getOptions().size());
-
-        Assert.assertEquals(13, selectAy.getOptions().size());
 
 
+
+        // System.out.println(ayDdmElemetti.getText());
+        // System.out.println(selectAy.getOptions().size());
+
+        List<WebElement> opsiyonElementleriList = selectAy.getOptions();
+
+        System.out.println(ReusableMethods.strListeCevir(opsiyonElementleriList));
+
+            // listedeki opsiyonlarda Mart değeri oldugnu test edin
+
+        Assert.assertTrue(ReusableMethods.strListeCevir(opsiyonElementleriList).contains("Mart"));
+
+        Assert.assertEquals(13, opsiyonElementleriList.size());
+
+
+        ReusableMethods.bekle(3);
         // Thread.sleep(1000);
     }
 
